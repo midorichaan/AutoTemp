@@ -9,7 +9,7 @@ def _generate_temp(min:float, max:float, days:int):
         return "days cannot use 0"
     
     if days == 1:
-        return round(random.uniform(min, max), 2))
+        return round(random.uniform(min, max), 2)
     else:
         return [round(random.uniform(min, max), 2) for i in range(days)]
 
