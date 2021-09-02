@@ -16,7 +16,7 @@ def _generate_temp(min:float=36.0, max:float=37.0, days:int=1):
 def get_temp():
     args = sys.argv
     
-    it not args:
+    if not args:
         return _generate_temp()
     else:
         return _generate_temp(args[0], args[1], args[3])
