@@ -12,7 +12,7 @@ def _generate_temp(min:float=36.0, max:float=37.0, days:int=1):
     else:
         return [round(random.uniform(min, max), 2) for i in range(int(days))]
 
-def get_temp():
+async def get_temp():
     return _generate_temp()
 
 if __name__ == "__main__":
